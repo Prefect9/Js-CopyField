@@ -1,0 +1,14 @@
+html, body{ min-height: 100%; padding: 0; margin: 0; display: block; color: #000 }
+*{ box-sizing: border-box; font-family: monospace, sans-serif }
+h1{ margin: 0 0 30px }
+.page{ min-height: 100%; display: flex; background: #efefef; padding: 60px 40px 40px; justify-content: center; flex-wrap: wrap; align-items: center; flex-direction: column }
+.field{ width: 100%; max-width: 350px; position: relative }
+.field + .field{ margin-top: 20px }
+.input{ height: 50px; background: #fff; border: 1px solid rgba(0, 0, 0, .15); color: #000; font-size: 16px; padding: 0 20px; width: 100%; outline: none; border-radius: 8px }
+.input::placeholder{ color: rgba(0, 0, 0, .5) }
+.input:hover{ border-color: rgba(0, 0, 0, .4) }
+.input:focus{ border-color: #1488ea; }
+.copy-btn, .copied-text{ position: absolute; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: 600; color: rgba(0, 0, 0, .75); right: 20px; cursor: pointer }
+.copied-text{ display: none }
+[data-copied=true] .copy-btn{ display: none }
+[data-copied=true] .copied-text{ display: block }
